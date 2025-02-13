@@ -23,18 +23,34 @@ check_storage_access() {
     fi
 }
 
+# Функция для проверки termux-api
+check_termux_api() {
+    if ! command -v termux-notification &> /dev/null; then
+        echo "🔄 Installing Termux:API..."
+        pkg install -y termux-api
+    fi
+}
+
 # Проверяем storage перед началом установки
 echo "🔍 Checking storage access..."
 check_storage_access
 
+# Проверяем наличие termux-api
+echo "🔍 Checking Termux:API..."
+check_termux_api
+
 # Проверяем/устанавливаем необходимые пакеты
 echo "📦 Installing required packages..."
 pkg update -y
-pkg install -y python termux-api ffmpeg
+pkg install -y python termux-api ffmpeg openssl python-pip
+pip install --upgrade pip
 
-# Устанавливаем питоновские библиотеки
+# Устанавливаем питоновские библиотеки с проверкой ошибок
 echo "🐍 Installing Python libraries..."
-pip install instaloader beautifulsoup4 requests ffmpeg-python
+if ! pip install instaloader beautifulsoup4 requests ffmpeg-python; then
+    echo "❌ Failed to install Python packages! Check your internet connection and try again"
+    exit 1
+fi
 
 # Создаём необходимые директории
 echo "📁 Creating directories..."
