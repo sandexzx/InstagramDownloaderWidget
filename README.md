@@ -39,7 +39,7 @@
    - Выберите "Другие разрешения" (или "Дополнительные разрешения")
    - Включите переключатель "Отображать поверх других приложений"
 
-> ⚠️ **Важно**: На разных телефонах данное разрешение может находится в разных местах. Воспользуйтесь поиском.
+> 📝 **Примечание**: Названия разделов в настройках Android могут отличаться в зависимости от производителя смартфона и версии системы. Если не можете найти нужный пункт - воспользуйтесь поиском по настройкам, указав "Termux" или "поверх других приложений".
 
 3. Откройте Termux и вставьте следующую команду:
 
@@ -52,6 +52,19 @@ curl -s https://raw.githubusercontent.com/sandexzx/InstagramDownloaderWidget/mai
    - Создаст нужные директории
    - Настроит скрипты
    - Сделает их исполняемыми
+
+## 🎯 Настройка виджета
+
+После успешной установки скрипта необходимо добавить виджет на главный экран:
+
+1. На главном экране Android найдите свободное место
+2. Нажмите и удерживайте это место до появления меню
+3. Выберите "Виджеты" (или проведите по экрану, чтобы перейти к списку виджетов)
+4. Найдите в списке "Termux Widget" (может потребоваться прокрутка)
+5. Выберите виджет и перетащите его на главный экран
+6. В появившемся списке скриптов выберите "download_reel"
+
+Теперь виджет готов к использованию! Просто скопируйте ссылку на понравившийся рилс и нажмите на виджет - скрипт сделает всю работу за вас 😎
 
 ## 💫 Как использовать
 
@@ -170,7 +183,7 @@ A lightweight yet powerful script for downloading Instagram Reels directly to yo
    - Select "Additional permissions" (or "Other permissions")
    - Enable "Display over other apps" toggle
 
-> ⚠️ **Important**: This permission may be in different places on different phones. Use the search.
+> 📝 **Note**: The names of settings sections may vary depending on your smartphone manufacturer and Android version. If you can't find the required option - use the settings search function, looking for "Termux" or "display over other apps".
 
 3. Open Termux and paste the following command:
 
@@ -183,6 +196,19 @@ curl -s https://raw.githubusercontent.com/sandexzx/InstagramDownloaderWidget/mai
    - Create required directories
    - Set up scripts
    - Make them executable
+
+## 🎯 Widget Setup
+
+After successfully installing the script, you need to add the widget to your home screen:
+
+1. Find an empty space on your Android home screen
+2. Press and hold that space until a menu appears
+3. Select "Widgets" (or swipe to access the widgets list)
+4. Look for "Termux Widget" in the list (you might need to scroll)
+5. Select and drag the widget to your home screen
+6. From the scripts list that appears, choose "download_reel"
+
+Your widget is now ready to use! Just copy any reel link and tap the widget - the script will handle everything else 😎
 
 ## 💫 How to Use
 
