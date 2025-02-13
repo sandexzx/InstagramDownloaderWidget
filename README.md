@@ -14,19 +14,40 @@
 ## 📱 Требования
 
 - Android смартфон
-- Установленный [Termux](https://f-droid.org/packages/com.termux/)
-- Установленный [Termux:API](https://f-droid.org/packages/com.termux.api/)
-- Разрешение на доступ к хранилищу для Termux
+- F-Droid - безопасный магазин приложений для Android ([скачать тут](https://f-droid.org))
+- Установленные через F-Droid приложения:
+  - [Termux](https://f-droid.org/packages/com.termux/)
+  - [Termux:API](https://f-droid.org/packages/com.termux.api/)
+  - [Termux:Widget](https://f-droid.org/packages/com.termux.widget/)
+- Разрешения для Termux:
+  - Доступ к хранилищу
+  - Отображение поверх других приложений
 
 ## 🛠️ Установка
 
-1. Откройте Termux и вставьте следующую команду:
+> ⚠️ **Важно**: Устанавливайте все приложения Termux только через F-Droid! Версии из Google Play больше не поддерживаются и могут работать некорректно.
+
+1. Установите все необходимые приложения через F-Droid:
+   - Termux
+   - Termux:API
+   - Termux:Widget
+
+2. Настройте разрешения для Termux:
+   - Откройте Настройки Android
+   - Перейдите в раздел "Приложения" (или "Управление приложениями")
+   - Найдите в списке Termux
+   - Выберите "Другие разрешения" (или "Дополнительные разрешения")
+   - Включите переключатель "Отображать поверх других приложений"
+
+> ⚠️ **Важно**: На разных телефонах данное разрешение может находится в разных местах. Воспользуйтесь поиском.
+
+3. Откройте Termux и вставьте следующую команду:
 
 ```bash
 curl -s https://raw.githubusercontent.com/sandexzx/InstagramDownloaderWidget/main/SetupDownloader.sh | bash
 ```
 
-2. Дождитесь завершения установки. Скрипт автоматически:
+4. Дождитесь завершения установки. Скрипт автоматически:
    - Установит все необходимые зависимости
    - Создаст нужные директории
    - Настроит скрипты
@@ -82,6 +103,11 @@ curl -s https://raw.githubusercontent.com/sandexzx/InstagramDownloaderWidget/mai
    termux-setup-storage
    ```
 
+4. **Виджет не работает**
+   - Проверьте, установлен ли Termux:Widget
+   - В настройках Android разрешите Termux отображаться поверх других приложений
+   - Перезапустите Termux после выдачи разрешений
+
 ## 📝 Лицензия
 
 Делайте что хотите, just give credit 😉
@@ -119,19 +145,40 @@ A lightweight yet powerful script for downloading Instagram Reels directly to yo
 ## 📱 Requirements
 
 - Android smartphone
-- [Termux](https://f-droid.org/packages/com.termux/) installed
-- [Termux:API](https://f-droid.org/packages/com.termux.api/) installed
-- Storage permission granted for Termux
+- F-Droid - secure Android app store ([download here](https://f-droid.org))
+- The following apps installed via F-Droid:
+  - [Termux](https://f-droid.org/packages/com.termux/)
+  - [Termux:API](https://f-droid.org/packages/com.termux.api/)
+  - [Termux:Widget](https://f-droid.org/packages/com.termux.widget/)
+- Required Termux permissions:
+  - Storage access
+  - Display over other apps
 
 ## 🛠️ Installation
 
-1. Open Termux and paste the following command:
+> ⚠️ **Important**: Install all Termux applications exclusively through F-Droid! Google Play versions are no longer maintained and may not work correctly.
+
+1. Install all required applications via F-Droid:
+   - Termux
+   - Termux:API
+   - Termux:Widget
+
+2. Configure Termux permissions:
+   - Open Android Settings
+   - Go to "Apps" (or "App management")
+   - Find Termux in the list
+   - Select "Additional permissions" (or "Other permissions")
+   - Enable "Display over other apps" toggle
+
+> ⚠️ **Important**: This permission may be in different places on different phones. Use the search.
+
+3. Open Termux and paste the following command:
 
 ```bash
 curl -s https://raw.githubusercontent.com/sandexzx/InstagramDownloaderWidget/main/SetupDownloader.sh | bash
 ```
 
-2. Wait for the installation to complete. The script will automatically:
+4. Wait for the installation to complete. The script will automatically:
    - Install all necessary dependencies
    - Create required directories
    - Set up scripts
@@ -186,6 +233,11 @@ The script utilizes:
    ```bash
    termux-setup-storage
    ```
+
+4. **Widget not working**
+   - Verify that Termux:Widget is installed
+   - Enable "Display over other apps" permission for Termux in Android settings
+   - Restart Termux after granting permissions
 
 ## 📝 License
 
