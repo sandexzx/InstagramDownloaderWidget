@@ -23,7 +23,7 @@
 1. Откройте Termux и вставьте следующую команду:
 
 ```bash
-curl -s https://raw.githubusercontent.com/your-username/instagram-reels-downloader/main/SetupDownloader.sh | bash
+curl -s https://raw.githubusercontent.com/sandexzx/InstagramDownloaderWidget/main/SetupDownloader.sh | bash
 ```
 
 2. Дождитесь завершения установки. Скрипт автоматически:
@@ -128,7 +128,7 @@ A lightweight yet powerful script for downloading Instagram Reels directly to yo
 1. Open Termux and paste the following command:
 
 ```bash
-curl -s https://raw.githubusercontent.com/your-username/instagram-reels-downloader/main/SetupDownloader.sh | bash
+curl -s https://raw.githubusercontent.com/sandexzx/InstagramDownloaderWidget/main/SetupDownloader.sh | bash
 ```
 
 2. Wait for the installation to complete. The script will automatically:
