@@ -189,7 +189,7 @@ The script utilizes:
 
 ## 📝 License
 
-MIT License - do whatever you want, just give credit 😉
+Do whatever you want, just give credit 😉
 
 ## 🤝 Contributing
 
